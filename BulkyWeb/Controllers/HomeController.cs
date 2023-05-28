@@ -1,8 +1,8 @@
-﻿using Bulky.Models;
+﻿using ProductSolution.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace BulkyWeb.Controllers
+namespace ProductSolutionWeb.Controllers
 {
     public class HomeController : Controller
     {
@@ -19,6 +19,11 @@ namespace BulkyWeb.Controllers
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult Blog()
         {
             return View();
         }
