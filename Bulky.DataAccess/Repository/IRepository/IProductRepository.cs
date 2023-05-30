@@ -1,4 +1,4 @@
-﻿using ProductSolution.DataAccess.Data;
+﻿using ProductSolution.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,12 +7,8 @@ using System.Threading.Tasks;
 
 namespace ProductSolution.DataAccess.Repository.IRepository
 {
-    public interface IUnitOfWork
+    public interface IProductRepository : IRepository<Product>
     {
-
-        ICategoryRepository Category { get; }
-        IProductRepository Product { get; }
-
-        void Save();
+        void update(Product obj);
     }
 }
