@@ -27,4 +27,8 @@
     <Folder Include="Views\Blog\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.min.css" />
+  </ItemGroup>
+
 </Project>

@@ -1,5 +1,43 @@
 ﻿<!DOCTYPE html>
 <html lang="zxx">
+@*
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-primary border-bottom box-shadow mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ProductSolution</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                <ul class="navbar-nav flex-grow-1">
+                    <li class="nav-item">
+                        <a class="nav-link text" asp-area="Customer" asp-controller="Home" asp-action="Index">Home</a>
+                    </li>
+                    >
+                    <li class="nav-item">
+                        <a class="nav-link text" asp-area="Customer" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Content Management
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Category" asp-action="Index">Category</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="dropdown-item" asp-area="Admin" asp-controller="Product" asp-action="Index">Product</a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+*@
 
 <head>
     <meta charset="UTF-8">
@@ -14,14 +52,14 @@
           rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
-    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="css/nice-select.css" type="text/css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="../../../../wwwroot/css/style.css" type="text/css">
 </head>
 
 <body>
@@ -48,9 +86,9 @@
             </div>
         </div>
         <div class="offcanvas__nav__option">
-            <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-            <a href="#"><img src="C:\Users\Hextr\Programming\dot-net-mastery-udemy\Bulky\BulkyWeb\wwwroot\img\icon\heart.png" alt=""></a>
-            <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+            <a href="#" class="search-switch"><img src="../../../../wwwroot/img/icon/search.png" alt=""></a>
+            <a href="#"><img src="../../../../wwwroot/img/icon/heart.png" alt=""></a>
+            <a href="#"><img src="../../../../wwwroot/img/icon/cart.png" alt=""> <span>0</span></a>
             <div class="price">$0.00</div>
         </div>
         <div id="mobile-menu-wrap"></div>
@@ -92,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-3">
                     <div class="header__logo">
-                        <a href="./index.html"><img src="img/logo.png" alt=""></a>
+                        <a href="./index.html"><img src="../../../../img/logo.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
@@ -117,9 +155,9 @@
                 </div>
                 <div class="col-lg-3 col-md-3">
                     <div class="header__nav__option">
-                        <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                        <a href="#"><img src="img/icon/heart.png" alt=""></a>
-                        <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
+                        <a href="#" class="search-switch"><img src="../../../../wwwroot/img/icon/search.png" alt=""></a>
+                        <a href="#"><img src="../../../../wwwroot/img/icon/heart.png" alt=""></a>
+                        <a href="#"><img src="../../../../wwwroot/img/icon/cart.png" alt=""> <span>0</span></a>
                         <div class="price">$0.00</div>
                     </div>
                 </div>
@@ -129,7 +167,7 @@
     </header>
     <!-- Header Section End -->
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-blog set-bg" data-setbg="img/breadcrumb-bg.jpg">
+    <section class="breadcrumb-blog set-bg" data-setbg="../../../../wwwroot/img/breadcrumb-bg.jpg">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -145,9 +183,9 @@
             <div class="row">
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-1.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-1.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 16 February 2020</span>
                             <h5>What Curling Irons Are The Best Ones</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -155,9 +193,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-2.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-2.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 21 February 2020</span>
                             <h5>Eternity Bands Do Last Forever</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -165,9 +203,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-3.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-3.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 28 February 2020</span>
                             <h5>The Health Benefits Of Sunglasses</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -175,9 +213,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-4.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-4.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 16 February 2020</span>
                             <h5>Aiming For Higher The Mastopexy</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -185,9 +223,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-5.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-5.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 21 February 2020</span>
                             <h5>Wedding Rings A Gift For A Lifetime</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -195,9 +233,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-6.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-6.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 28 February 2020</span>
                             <h5>The Different Methods Of Hair Removal</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -205,9 +243,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-7.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-7.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 16 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 16 February 2020</span>
                             <h5>Hoop Earrings A Style From History</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -215,9 +253,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-8.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-8.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 21 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 21 February 2020</span>
                             <h5>Lasik Eye Surgery Are You Ready</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -225,9 +263,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="blog__item">
-                        <div class="blog__item__pic set-bg" data-setbg="img/blog/blog-9.jpg"></div>
+                        <div class="blog__item__pic set-bg" data-setbg="../../../../wwwroot/img/blog/blog-9.jpg"></div>
                         <div class="blog__item__text">
-                            <span><img src="img/icon/calendar.png" alt=""> 28 February 2020</span>
+                            <span><img src="../../../../wwwroot/img/icon/calendar.png" alt=""> 28 February 2020</span>
                             <h5>Lasik Eye Surgery Are You Ready</h5>
                             <a href="#">Read More</a>
                         </div>
@@ -244,10 +282,10 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="../../../../wwwroot/img/footer-logo.png" alt=""></a>
                         </div>
                         <p>The customer is at the heart of our unique business model, which includes design.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
+                        <a href="#"><img src="../../../../wwwroot/img/payment.png" alt=""></a>
                     </div>
                 </div>
                 <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
@@ -315,16 +353,16 @@
     </div>
     <!-- Search End -->
     <!-- Js Plugins -->
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
-    <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/jquery.countdown.min.js"></script>
-    <script src="js/jquery.slicknav.js"></script>
-    <script src="js/mixitup.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="../../../../wwwroot/js/jquery-3.3.1.min.js"></script>
+    <script src="../../../../wwwroot/js/bootstrap.min.js"></script>
+    <script src="../../../../wwwroot/js/jquery.nice-select.min.js"></script>
+    <script src="../../../../wwwroot/js/jquery.nicescroll.min.js"></script>
+    <script src="../../../../wwwroot/js/jquery.magnific-popup.min.js"></script>
+    <script src="../../../../wwwroot/js/jquery.countdown.min.js"></script>
+    <script src="../../../../wwwroot/js/jquery.slicknav.js"></script>
+    <script src="../../../../wwwroot/js/mixitup.min.js"></script>
+    <script src="../../../../wwwroot/js/owl.carousel.min.js"></script>
+    <script src="../../../../wwwroot/js/main.js"></script>
 </body>
 
 </html>
