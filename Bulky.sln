@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.33711.374
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSolution", "BulkyWeb\ProductSolution.csproj", "{D3902B2E-C7D5-443B-8942-A65F8E28A996}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSolution.web", "BulkyWeb\ProductSolution.web.csproj", "{D3902B2E-C7D5-443B-8942-A65F8E28A996}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductSolution.DataAccess", "Bulky.DataAccess\ProductSolution.DataAccess.csproj", "{13EDA128-FE25-43E0-887D-4CF586B38483}"
 EndProject
