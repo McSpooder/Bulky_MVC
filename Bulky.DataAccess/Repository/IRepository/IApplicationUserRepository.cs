@@ -9,6 +9,5 @@ namespace ProductSolution.DataAccess.Repository.IRepository
 {
     public interface IApplicationUserRepository : IRepository<ApplicationUser>
     {
-        void update(Category obj);
     }
 }
