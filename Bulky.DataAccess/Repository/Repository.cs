@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using ProductSolution.DataAccess.Data;
 using ProductSolution.DataAccess.Repository.IRepository;
 using Microsoft.EntityFrameworkCore;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace ProductSolution.DataAccess.Repository
 {
@@ -25,9 +26,19 @@ namespace ProductSolution.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(System.Linq.Expressions.Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T Get(System.Linq.Expressions.Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
         {
-            IQueryable<T> query = dbSet;
+            IQueryable<T> query;
+            if (tracked)
+            {
+                query = dbSet;
+                
+            }
+            else
+            {
+                query = dbSet.AsNoTracking();
+
+            }
             query = query.Where(filter);
             if (!string.IsNullOrEmpty(includeProperties))
             {
@@ -41,9 +52,14 @@ namespace ProductSolution.DataAccess.Repository
 
         }
 
-        public IEnumerable<T> GetAll(string? includeProperties = null)
+        public IEnumerable<T> GetAll(System.Linq.Expressions.Expression<Func<T, bool>>? filter, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+            if (filter!= null)
+            {
+                query = query.Where(filter);
+            }
+
             if (!string.IsNullOrEmpty(includeProperties))
             {
                 foreach(var includeProp in includeProperties
